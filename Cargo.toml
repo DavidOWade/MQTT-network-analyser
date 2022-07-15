@@ -1,0 +1,18 @@
+[package]
+name = "MQTT-network-analyser"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+paho-mqtt = { git = "https://github.com/eclipse/paho.mqtt.rust.git", branch = "master" }
+round = "0.1.0"
+
+[[bin]]
+name = "mqtt"
+path = "src/main.rs"
+
+[[bin]]
+name = "analyser"
+path = "src/analyser.rs"
